@@ -12,7 +12,7 @@ def index(request):
 
     return render(request,'index.html')
 
-def analyzed(request):
+def analyze(request):
     djtext = request.POST.get('text', 'default')
     removepunc = request.POST.get('removepunc', 'default')
     fullcaps = request.POST.get('fullcaps', 'default')
